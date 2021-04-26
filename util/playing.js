@@ -9,7 +9,7 @@ module.exports = {
         const queue = message.client.queue.get(message.guild.id);
         if (!song) {
             sendError(
-                "Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel go to `util/playing.js` and remove the line number 15\n\nThank you for using my code! [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot)",
+                "Sorry But You Can't Stay 24/7 In A Call With Me IF You Thing This Is An Error Contact @Emerald#4028 Go Subscribe To: [Zimber Playz](https://www.youtube.com/channel/UC6oTBDnsLwPHssVgUTV21ww) And [Herobrine Gaming](https://www.youtube.com/channel/UC6oTBDnsLwPHssVgUTV21ww)",
                 message.channel
             );
             message.guild.me.voice.channel.leave(); //If you want your bot stay in vc 24/7 remove this line :D
@@ -34,7 +34,7 @@ module.exports = {
                     if (er) {
                         if (queue) {
                             module.exports.play(queue.songs[0], message);
-                            return sendError(`An unexpected error has occurred.\nPossible type \`${er}\``, message.channel);
+                            return sendError(`Don't Worry!\nPossible type \`${er}\``, message.channel);
                         }
                     }
                 });
